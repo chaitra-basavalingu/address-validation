@@ -1,0 +1,48 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.1.1'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id "com.diffplug.spotless" version "6.19.0"
+}
+
+group = 'com.empora'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // LOMBOK
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    testCompileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    implementation 'io.freefair.gradle:lombok-plugin:8.1.0'
+
+    // Open CSV
+    implementation 'com.opencsv:opencsv:5.7.1'
+
+    // Spring boot
+    implementation('org.springframework.boot:spring-boot-starter-web') {
+        exclude group: 'org.apache.tomcat.embed', module: 'tomcat-embed-core'
+        exclude group: 'org.apache.tomcat.embed', module: 'tomcat-embed-el'
+        exclude group: 'org.apache.tomcat.embed', module: 'tomcat-embed-websocket'
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
+    }
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
