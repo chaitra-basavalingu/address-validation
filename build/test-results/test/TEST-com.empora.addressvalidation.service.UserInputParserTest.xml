@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.empora.addressvalidation.service.UserInputParserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-07-09T21:42:04" hostname="Chaitras-MacBook-Pro.local" time="0.008">
+  <properties/>
+  <testcase name="throws Exception when there is an invalid string in the provided input" classname="com.empora.addressvalidation.service.UserInputParserTest" time="0.001"/>
+  <testcase name="Parses valid csv input stream and creates Address list" classname="com.empora.addressvalidation.service.UserInputParserTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

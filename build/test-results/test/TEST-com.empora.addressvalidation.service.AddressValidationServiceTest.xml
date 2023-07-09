@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.empora.addressvalidation.service.AddressValidationServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-09T21:42:04" hostname="Chaitras-MacBook-Pro.local" time="0.064">
+  <properties/>
+  <testcase name="when Smarty address validation API finds no matches returns Invalid Address result" classname="com.empora.addressvalidation.service.AddressValidationServiceTest" time="0.039"/>
+  <testcase name="when Smarty Address Validation API returns 500 status code throws Exception" classname="com.empora.addressvalidation.service.AddressValidationServiceTest" time="0.01"/>
+  <testcase name="when Smarty address validation API finds a valid address returns the Validated Address" classname="com.empora.addressvalidation.service.AddressValidationServiceTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

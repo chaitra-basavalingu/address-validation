@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.empora.addressvalidation.domain.ValidationResponseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-07-09T21:42:04" hostname="Chaitras-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="when Result is InvalidAddress prints Invalid Address" classname="com.empora.addressvalidation.domain.ValidationResponseTest" time="0.0"/>
+  <testcase name="when Result is AddressValidationResponse prints the validated address" classname="com.empora.addressvalidation.domain.ValidationResponseTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

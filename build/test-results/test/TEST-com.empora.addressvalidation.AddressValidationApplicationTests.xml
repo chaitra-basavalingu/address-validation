@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.empora.addressvalidation.AddressValidationApplicationTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-07-09T21:42:03" hostname="Chaitras-MacBook-Pro.local" time="0.985">
+  <properties/>
+  <testcase name="App throws Exception when file is not found" classname="com.empora.addressvalidation.AddressValidationApplicationTests" time="0.56"/>
+  <testcase name="App receives filePath for input and it calls InputStreamProcessor to process the file" classname="com.empora.addressvalidation.AddressValidationApplicationTests" time="0.422"/>
+  <testcase name="contextLoads()" classname="com.empora.addressvalidation.AddressValidationApplicationTests" time="0.001"/>
+  <system-out><![CDATA[Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+17:42:02.868 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.empora.addressvalidation.AddressValidationApplicationTests]: AddressValidationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:42:02.914 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.empora.addressvalidation.AddressValidationApplication for test class com.empora.addressvalidation.AddressValidationApplicationTests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
