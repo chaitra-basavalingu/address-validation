@@ -37,13 +37,16 @@ To run just tests:
 ./gradlew test
 ```
 
-run the application:
+run the application: (The below commands assume that you are at the root of the project directory)
 ```
-java run:-jar  ./build/libs/address-validation-0.0.1-SNAPSHOT.jar
+java run:-jar  ./build/libs/address-validation-0.0.1-SNAPSHOT.jar <input-file>
 ```
 or
 ```
 java -jar ./build/libs/address-validation-0.0.1-SNAPSHOT.jar <input-file>
+
+eg: java -jar ./build/libs/address-validation-0.0.1-SNAPSHOT.jar ./src/test/resources/input.csv
+
 ```
 
 ## Design
@@ -64,9 +67,9 @@ Lastly, a simple method parses over the results and prints the user provided add
 ## Assumptions
 1. Fail fast: as there was little guidance on how to manage invalid/surprising input, I opted to fail immediately upon invalid input.
 This includes:
-* unparseable input lines 
-* any unexpected results returned by the Smarty API. (for eg, if any error occurs while calling the API I chose to fail immediately)
-2. The Smarty API accepts multiple addresses in the request but I chose to send a single address in each request to simulate a use case where a user's address needs to be verified instantly even though the input is a file which contains a batch of addresses. In a real world scenario, we would optimize based on the type of user experience we need to support, the cost of each request to the Smarty API, etc.
+   * unparseable input lines 
+   * any unexpected results returned by the Smarty API. (for eg, if any error occurs while calling the API I chose to fail immediately)
+2. The Smarty API accepts multiple addresses in the request but, I chose to send a single address in each request to simulate a use case where a user's address needs to be verified instantly even though the input is a file which contains a batch of addresses. In a real world scenario, we would optimize based on the type of user experience we need to support, the cost of each request to the Smarty API, etc.
 3. For the sake of simplicity I haven't implemented a database or a store to lookup previously encountered addresses and results before performing a request to the Smarty API. 
 
 ## Features
